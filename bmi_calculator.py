@@ -1,12 +1,4 @@
 def calculate_bmi(feet: int, inches: int, weight_pounds: float) -> tuple[float, str]:
-    """
-    Calculates the Body Mass Index (BMI) and determines the BMI category.
-
-    :param feet: Height in feet
-    :param inches: Height in inches
-    :param weight_pounds: Weight in pounds
-    :return: Tuple containing (BMI value, BMI category)
-    """
     if feet < 0 or inches < 0 or weight_pounds <= 0:
         raise ValueError("Height and weight must be positive numbers.")
     
